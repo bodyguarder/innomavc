@@ -7,10 +7,10 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
-  font-size: 16px;
-  font-family: "Poppins",
+  font-size: 20px;
+  font-family: "Montserrat",
     sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: normal;
   background-color: $white;
   color: $black;
@@ -21,10 +21,10 @@ body.hidden {
 }
 
 .container {
-  max-width: 1410px;
+  max-width: 1245px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .main {
@@ -51,5 +51,10 @@ body.hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: $blue-200;
 }
 
