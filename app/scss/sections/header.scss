@@ -18,6 +18,12 @@
     background-color: rgba($color: $black, $alpha: 0.59);
   }
 
+  &--active {
+    &::after {
+      z-index: 0;
+    }
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -41,7 +47,22 @@
     }
 
     @include media-2 {
-      display: none;
+      z-index: 5;
+      padding: 75px 99px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      flex-direction: column;
+      background-color: $blue-200;
+      row-gap: 0;
+      transform: translateY(-200%);
+      transition: transform 0.2s linear;
+
+      &--active {
+        display: flex;
+        transform: translateY(0);
+      }
     }
   }
 
@@ -52,6 +73,18 @@
       @include media-1 {
         margin-right: 34px;
       }
+
+      @include media-2 {
+        margin-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.52);
+      }
+    }
+
+    @include media-2 {
+      max-width: 160px;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
     }
   }
 
@@ -78,6 +111,7 @@
     background-color: $white;
 
     @include media-2 {
+      z-index: 10;
       display: block;
     }
   }
@@ -157,11 +191,11 @@
     padding: 15px 30px;
     background: linear-gradient(276.41deg, #016CA8 -7%, #61B5E4 77.16%);
     border-radius: 10px;
-    transition: all 0.2s linear;
+    transition: box-shadow 0.2s linear;
 
     @media (any-hover: hover) {
       &:hover {
-        background: linear-gradient($blue-300);
+        background: linear-gradient(276.41deg, #016CA8 100%, #61B5E4 0);
         box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
       }
     }
