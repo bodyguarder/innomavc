@@ -12,6 +12,25 @@
 
 <body>
   <header class="header" style="background-image: url('images/sections/header/city-view.jpg');">
+    <form class="header__form login-form" action="#">
+      <h2 class="login-form__title">Вход</h2>
+      <label class="sr-only" for="email">поле логина</label>
+      <input class="login-form__input login-form__input--login" name="email" id="email" type="email"
+        placeholder="E-маил">
+
+      <label class="sr-only" for="password">поле пароля</label>
+      <input class="login-form__input login-form__input--password" name="password" id="password" type="password"
+        placeholder="пароль">
+
+      <button class="login-form__btn btn" type="button">Войти</button>
+
+      <a class="login-form__link" href="#">Зарегистрироваться</a>
+
+      <button class="login-form__closer-btn">
+        <span class="sr-only">кнопка закрытия формы авторизации</span>
+      </button>
+    </form>
+    
     <div class="header__container container">
       <div class="header__wrapper">
         <a class="header__logo logo" href="#">
@@ -42,6 +61,7 @@
           <span class="sr-only">кнопка открытия меню</span>
           <span class="menu-btn__burger"></span>
           <span class="menu-btn__burger"></span>
+        </button>
       </div>
 
       <div class="header__welcome">
