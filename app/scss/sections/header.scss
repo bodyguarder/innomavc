@@ -21,12 +21,14 @@
   &--active {
     &::after {
       z-index: 0;
+      height: 100vh;
     }
   }
 
   &--modify {
     &::after {
       z-index: 10;
+      height: 100vh;
     }
   }
 
