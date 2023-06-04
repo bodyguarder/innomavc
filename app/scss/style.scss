@@ -6,8 +6,11 @@
 @import 'common/libs'; //библиотеки
 
 @import 'sections/header'; //хэдер
-@import 'sections/services-section'; //секиция услуг
+@import 'sections/services-section'; //секция услуг
 /* @import 'sections/footer'; // футер */
+@import 'sections/clients-section'; //секция для клиентов
+@import 'sections/startup-section'; //секция консультации
 
 @import 'components/menu-btn'; //кнопка открытия меню
 @import 'components/login-form'; //форма авторизации
+@import 'components/general-list'; //переиспользуемый список

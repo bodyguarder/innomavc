@@ -1,0 +1,48 @@
+.general-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__item {
+    max-width: 390px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
+
+    @include media-1 {
+      max-width: inherit;
+    }
+  }
+
+  &__num {
+    margin-bottom: 15px;
+    font-size: 80px;
+    font-weight: 700;
+    color: rgba(17, 120, 178, 0.5);
+
+    @include media-2 {
+      font-size: 64px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 600;
+
+    @include media-2 {
+      font-size: 14px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+
+    @include media-2 {
+      font-size: 14px;
+    }
+  }
+}
