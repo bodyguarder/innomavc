@@ -30,7 +30,7 @@
         <span class="sr-only">кнопка закрытия формы авторизации</span>
       </button>
     </form>
-    
+
     <div class="header__container container">
       <div class="header__wrapper">
         <a class="header__logo logo" href="#">
@@ -97,9 +97,10 @@
 
             <button class="services-section__btn btn">Узнать подробнее</button>
           </div>
-          
+
           <div class="services-section__picture">
-            <img class="services-section__img" src="images/sections/services-section/analitics.jpg" alt="декоративное изображение">
+            <img class="services-section__img" src="images/sections/services-section/analitics.jpg"
+              alt="декоративное изображение">
           </div>
         </div>
 
@@ -174,28 +175,85 @@
       <div class="tabs-section__container container">
         <h2 class="tabs-section__title title">С какими рынками мы работаем?</h2>
 
-        <ul class="tabs-section__tabs-btn">
+        <ul class="tabs-section__tabs-links">
           <li class="tabs-section__tabs-item">
-            <button class="tabs-section__tabs-button">Ближний восток</button>
+            <a class="tabs-section__tabs-link tabs-section__tabs-link--active" href="#east">Ближний восток</a>
           </li>
 
           <li class="tabs-section__tabs-item">
-            <button class="tabs-section__tabs-button">Азия</button>
+            <a class="tabs-section__tabs-link" href="#asia">Азия</a>
           </li>
 
           <li class="tabs-section__tabs-item">
-            <button class="tabs-section__tabs-button">Латинская Америка</button>
+            <a class="tabs-section__tabs-link" href="#america">Латинская Америка</a>
           </li>
 
           <li class="tabs-section__tabs-item">
-            <button class="tabs-section__tabs-button">Африка</button>
+            <a class="tabs-section__tabs-link" href="africa">Африка</a>
           </li>
         </ul>
 
         <ul class="tabs-section__content-list">
-          <li class="tabs-section__content-item" style="background-image: url('images/sections/tabs-section/map.jpg');">
+          <li class="tabs-section__content-item tabs-section__content-item--active"
+            style="background-image: url('images/sections/tabs-section/map.jpg');" id="east">
+            <div class="tabs-section__wrapper">
+              <h3 class="tabs-section__subtitle">чем интересен
+                <br> <span>рынок mena:</span></h3>
 
+              <p class="tabs-section__text">ОАЭ, Саудовская Аравия,
+                Израиль, Оман, Бахрейн, Катар,
+                Тунис, Йемен, Египет, Алжир</p>
+
+              <button class="tabs-section__btn button" type="button">Выйти на рынок</button>
+
+              <div class="tabs-section__inner">
+                <img class="tabs-section__img" src="images/sections/tabs-section/avatar.jpg" width="62" height="62"
+                  alt="аватар менеджера">
+
+                <div class="tabs-section__description">
+                  <span class="tabs-section__name">Фатима</span>
+
+                  <span class="tabs-section__prof">Менеджер по MENA</span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="tabs-section__info-list">
+              <li class="tabs-section__info-item">
+                <span class="tabs-section__info-num">>5,5 <span>Млрд</span></span>
+
+                <p class="tabs-section__info-text">Инвестиции pre-seed, seed</p>
+              </li>
+
+              <li class="tabs-section__info-item">
+                <span class="tabs-section__info-num">>300</span>
+
+                <p class="tabs-section__info-text">Акселераторов, инкубаторов</p>
+              </li>
+
+              <li class="tabs-section__info-item">
+                <span class="tabs-section__info-num">73</span>
+
+                <p class="tabs-section__info-text">Венчурных фонда</p>
+              </li>
+
+              <li class="tabs-section__info-item">
+                <a class="tabs-section__link" href="#">
+                  <span style="background-image: url(images/sprite.svg#download);"></span>
+                  Скачать отчет
+                  по рынку MENA</a>
+              </li>
+            </ul>
           </li>
+
+          <li class="tabs-section__content-item" style="background-image: url('images/sections/tabs-section/map.jpg');"
+            id="asia"></li>
+
+          <li class="tabs-section__content-item" style="background-image: url('images/sections/tabs-section/map.jpg');"
+            id="america"></li>
+
+          <li class="tabs-section__content-item" style="background-image: url('images/sections/tabs-section/map.jpg');"
+            id="africa"></li>
         </ul>
       </div>
     </section>

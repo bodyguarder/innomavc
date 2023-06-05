@@ -12,7 +12,7 @@
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
 
-    @include media-1 {
+    @include media-3 {
       max-width: inherit;
     }
   }
@@ -23,7 +23,7 @@
     font-weight: 700;
     color: rgba(17, 120, 178, 0.5);
 
-    @include media-2 {
+    @include media-4 {
       font-size: 64px;
     }
   }
@@ -32,7 +32,7 @@
     margin-bottom: 30px;
     font-weight: 600;
 
-    @include media-2 {
+    @include media-4 {
       font-size: 14px;
     }
   }
@@ -41,7 +41,7 @@
     font-size: 16px;
     font-weight: 300;
 
-    @include media-2 {
+    @include media-4 {
       font-size: 14px;
     }
   }

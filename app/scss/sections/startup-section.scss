@@ -32,11 +32,11 @@
     line-height: 1.5;
     text-transform: uppercase;
 
-    @include media-1 {
+    @include media-3 {
       font-size: 36px;
     }
 
-    @include media-2 {
+    @include media-4 {
       font-size: 24px;
     }
   }
@@ -46,11 +46,11 @@
     font-weight: 500;
     font-size: 24px;
 
-    @include media-1 {
+    @include media-3 {
       font-size: 16px;
     }
 
-    @include media-2 {
+    @include media-4 {
       font-size: 14px;
     }
   }
@@ -58,11 +58,11 @@
   &__btn {
     padding: 15px 35px;
 
-    @include media-1 {
+    @include media-3 {
       font-size: 18px;
     }
 
-    @include media-2 {
+    @include media-4 {
       font-size: 16px;
     }
   }
