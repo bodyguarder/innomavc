@@ -35,4 +35,10 @@ $(function () {
     preloader: false,
     fixedContentPos: false,
   });
+
+  $('.drop-list__btn').on('click', function () {
+    $(this).toggleClass('drop-list__btn--active');
+    $(this).next('.drop-list__list').slideToggle(300, "linear");
+  });
+
 });

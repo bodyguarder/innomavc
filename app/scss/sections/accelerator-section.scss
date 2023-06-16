@@ -1,4 +1,10 @@
 .accelerator-section {
+  &__container {
+    @include media-3 {
+      text-align: center;
+    }
+  }
+
   &__text {
     padding-bottom: 20px;
 
@@ -81,5 +87,19 @@
       width: 63px;
       height: 63px;
     }
+  }
+
+  &__program-lists {
+    margin-bottom: 20px;
+  }
+
+  &__program-items {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    padding: 20px 45px;
   }
 }
