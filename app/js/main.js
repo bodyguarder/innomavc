@@ -26,4 +26,13 @@ $(function () {
     $('.tabs-section__content-item').removeClass('tabs-section__content-item--active');
     $($(this).attr('href')).addClass('tabs-section__content-item--active');
   });
+
+  $('.accelerator-section__popup-link').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+  });
 });
