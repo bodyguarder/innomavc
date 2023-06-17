@@ -1,0 +1,136 @@
+.prices-section {
+  padding: 100px 0;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @include media-1 {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    padding: 30px 0;
+    max-width: 392px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+  }
+
+  &__service-name {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 30px 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid $grey-700;
+    color: $black-500;
+
+    @include media-1 {
+      font-size: 16px;
+    }
+
+    @include media-4 {
+      padding: 0 30px 30px 30px;
+    }
+
+    &::before {
+      content: '';
+      padding-top: 76px;
+      margin-bottom: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--report {
+      &::before {
+        background-image: url('../images/sprite.svg#report');
+      }
+    }
+
+    &--config {
+      &::before {
+        background-image: url('../images/sprite.svg#config');
+      }
+    }
+
+    &--rocket {
+      &::before {
+        background-image: url('../images/sprite.svg#rocket');
+      }
+    }
+  }
+
+  &__service-title {
+    padding: 0 40px;
+    text-align-last: left;
+    font-weight: 500;
+    font-size: 18px;
+
+    @include media-1 {
+      font-size: 16px;
+    }
+
+    @include media-4 {
+      padding: 0 30px;
+    }
+  }
+
+  &__report-list {
+    padding: 20px 40px;
+    height: 281px;
+    text-align-last: left;
+    font-weight: 400;
+    font-size: 16px;
+
+    @include media-1 {
+      font-size: 14px;
+    }
+
+    @include media-4 {
+      padding: 20px 30px;
+    }
+  }
+
+  &__report-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__service-item {
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $grey-700;
+    font-weight: 500;
+    font-size: 18px;
+
+    @include media-1 {
+      font-size: 14px;
+    }
+
+    @include media-4 {
+      padding: 15px 30px;
+    }
+  }
+
+  &__service-value {
+    font-weight: 300;
+  }
+
+  &__button {
+    padding: 20px 80px;
+
+    @include media-1 {
+      font-size: 14px;
+    }
+  }
+}
