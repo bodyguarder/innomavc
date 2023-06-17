@@ -1,4 +1,6 @@
 .accelerator-section {
+  padding-bottom: 105px;
+
   &__container {
     @include media-3 {
       text-align: center;
