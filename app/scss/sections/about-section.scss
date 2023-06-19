@@ -45,6 +45,7 @@
   }
 
   &__founder-wrapper {
+    margin-bottom: 100px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -100,5 +101,13 @@
     font-weight: 400;
     font-size: 16px;
     font-style: italic;
+  }
+
+  &__gallery-img {
+    margin: 0 auto;
+  }
+
+  .slick-slide {
+    margin: 0 5px;
   }
 }
