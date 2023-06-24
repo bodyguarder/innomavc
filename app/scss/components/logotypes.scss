@@ -1,0 +1,13 @@
+.logotypes {
+  padding: 56px;
+  position: relative;
+  background-color: $white;
+  border-radius: 10px;
+
+  &__img {
+    position: absolute;
+    padding: 0 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
