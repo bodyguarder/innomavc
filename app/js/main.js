@@ -44,7 +44,8 @@ $(function () {
   $('.about-section__gallery-slider').slick({
     slidesToShow: 5,
     slidesToScroll: 2,
-    autoplay: true,
+    arrows: false,
+    autoplay: false,
     autoplaySpeed: 2000,
     centerMode: true,
     responsive: [{
